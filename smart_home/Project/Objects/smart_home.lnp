@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+".\objects\core_cm3.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\stm32f10x_it.o"
+".\objects\system_stm32f10x.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\misc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\main.o"
+".\objects\led.o"
+".\objects\key.o"
+".\objects\delay.o"
+".\objects\uart.o"
+".\objects\oled.o"
+".\objects\oled_dis.o"
+".\objects\motor.o"
+".\objects\infrared.o"
+".\objects\rgb.o"
+".\objects\dht11.o"
+".\objects\wifi.o"
+".\objects\timer.o"
+".\objects\relay.o"
+--strict --scatter ".\Objects\smart_home.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\smart_home.map" -o .\Objects\smart_home.axf
